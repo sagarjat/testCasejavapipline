@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 git 'https://github.com/sagarjat/calculator-java.git'
-                sh 'mvn compile'
+                // sh 'mvn compile'
                 // bat '.\\mvnw clean compile'
             }
         }
