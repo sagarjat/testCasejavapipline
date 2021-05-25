@@ -5,14 +5,14 @@ pipeline {
         stage('Build') {
             steps {
                 git 'https://github.com/sagarjat/calculator-java.git'
-                sh './mvnw compile'
+                sh './mvn compile'
                 // bat '.\\mvnw clean compile'
             }
         }
         stage('Test') {
             steps {
                 sh './mvnw test'
-                // bat '.\\mvnw test'
+                // bat '.\\mvn test'
             }
 
             post {
